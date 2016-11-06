@@ -8,6 +8,7 @@ module.exports = {
     root: __dirname,
     alias: {
       App: 'src/components/App.js',
+      routes: 'src/routes.js',
       stylesheet: 'src/styles/stylesheet.scss'
     },
     extensions: ['', '.js', '.jsx']
