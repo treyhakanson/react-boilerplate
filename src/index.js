@@ -1,15 +1,20 @@
-// npm modules
+// third-party modules
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, hashHistory } from 'react-router';
+import { Provider } from 'react-redux';
 
-// Custom modules
+// custom modules
 import routes from 'routes';
+import { configureStore } from 'configureStore';
 
 // styles
 require('style!css!sass!stylesheet');
 
+
 ReactDOM.render(
-	<Router history={hashHistory} routes={routes} />,
+	<Provider store={configureStore()}>
+		<Router history={hashHistory} routes={routes} />
+	</Provider>,
 	document.getElementById('root')
 );
