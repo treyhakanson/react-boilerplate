@@ -1,4 +1,4 @@
-# A React Boilerplat to Get Things up and Running Fast
+# A React Boilerplate to Get Things up and Running Fast
 A simple webpack ready with redux, babel, webpack, and a variety of utilities to make testing and building easy. just clone the repo and run:
 ```bash
 npm install -d
