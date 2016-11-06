@@ -1,12 +1,19 @@
-# A React App with Babel and Webpack
-A simple webpack ready with babel and webpack. just clone the repo and run:
+# A React Boilerplat to Get Things up and Running Fast
+A simple webpack ready with redux, babel, webpack, and a variety of utilities to make testing and building easy. just clone the repo and run:
 ```bash
 npm install -d
 ```
 
-Ensure that tests are up and running (*you will need google chrome to run tests*):
+Be sure to compile with webpack before attempting to start the server:
+```bash
+webpack -w
+```
+the `-w` flag will tell webpack to continuosly compile down to bundle.js as changes are made.
+
+Ensure that tests are up and running, and upon success go ahead and start the server as a final check: (*you will need google chrome to run tests*):
 ```bash
 npm test
+npm start
 ```
 
 # Info
