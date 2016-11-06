@@ -18,6 +18,11 @@ Contains all the necessary babel/webpack modules needed to get started. Also inc
 - mocha
 - react-addons-test-utils
 
+### Loaders
+- style-loader
+- css-loader
+- sass-loader
+
 ### Miscallaneous
 - faker (used to generate placeholder content)
 
@@ -44,7 +49,33 @@ Some useful calls for testing:
 // and then check if certain component methods are giving
 // the expected outputs
 TestUtils.renderIntoDocument(<MyComponent/>);
+
+// will get the dom node (actual html) for a react 
+// component
+ReactDOM.findDOMNode(myComponent);
 ```
+
+Testing forms
+help to use 'spies' on form functions (such as `onSubmit`) to ensure that they are actually being called.
+```javascript
+// an example of injecting a spy and using various
+// assertion methods
+var spy = expect.createSpy();
+var myFrom = TestUtils.renderIntoDocument(<MyForm methodToBindSpyTo={spy}/>);
+
+// must manually set form values and the select the form
+// domNode, and then simulate the submit
+TestUtils.Simulate.submit(formDomNode);
+
+// checking whether or not the spay was called as expected
+expect(spy).toHaveBeenCalled();
+expect(spy).toHaveBeenCalledWith(args);
+expect(spy).toNotHaveBeenCalled();
+```
+spies are useful beyond just forms, but they are a classic example of when to use spies.
+
+# Styling
+for styling, scss is available. Work with scss partials (_partial.scss) and then import all relevant partials into stylesheet.scss. Do not put anything other than *imports* in this file.
 
 
 
