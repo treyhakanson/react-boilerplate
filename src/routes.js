@@ -1,4 +1,4 @@
-import React, { Component } from 'React';
+import React, { Component } from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from 'App';
