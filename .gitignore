@@ -2,4 +2,6 @@
 node_modules/
 
 # miscallaneous
-.DS_STORE
+.DS_Store
+public/bundle.js
+npm-debug.log
