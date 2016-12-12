@@ -3,5 +3,4 @@ node_modules/
 
 # miscallaneous
 .DS_Store
-public/bundle.js
 npm-debug.log
