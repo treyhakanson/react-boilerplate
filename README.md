@@ -1,16 +1,15 @@
 # A React Boilerplate to Get Things up and Running Fast
-A simple webpack ready with redux, babel, webpack, and a variety of utilities to make testing and building easy. just clone the repo and run:
+A simple webpack ready with redux, babel, webpack, and a variety of utilities to make testing and building easy. Deployment made easy too with basic docker setup and heroku recognizable structure. just clone the repo and run:
 ```bash
 npm install -d
 ```
 
 Be sure to compile with webpack before attempting to start the server:
 ```bash
-webpack -w
+npm run dev
 ```
-the `-w` flag will tell webpack to continuosly compile down to bundle.js as changes are made.
 
-Ensure that tests are up and running, and upon success go ahead and start the server as a final check: (*you will need google chrome to run tests*):
+Ensure that tests are up and running, and upon success go ahead and start the server as a final check: (*you will need google chrome to run tests with the karma test runner*):
 ```bash
 npm test
 npm start
@@ -26,6 +25,8 @@ Contains all the necessary babel/webpack modules needed to get started. Also inc
 - react-addons-test-utils
 
 ### Loaders
+- file-loader
+- json-loader
 - style-loader
 - css-loader
 - sass-loader
@@ -82,7 +83,7 @@ expect(spy).toNotHaveBeenCalled();
 spies are useful beyond just forms, but they are a classic example of when to use spies.
 
 # Styling
-for styling, scss is available. Work with scss partials (_partial.scss) and then import all relevant partials into stylesheet.scss. Do not put anything other than *imports* in this file.
+for styling, scss is available. Work with scss partials (_partial.scss) and then import all relevant partials into stylesheet.scss. Do not put anything other than *imports* in this file to keep things tidy.
 
 
 

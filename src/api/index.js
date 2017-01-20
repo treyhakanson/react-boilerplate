@@ -1,1 +1,1 @@
-// used for calling to localStorage
+// export queries and internal api methods here
