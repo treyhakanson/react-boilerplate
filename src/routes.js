@@ -5,6 +5,5 @@ import App from 'App';
 
 export default (
 	<Route path="/" component={App}>
-		<Route path="*" component={() => <h1>404 Not Found</h1>}/>
 	</Route>
 );

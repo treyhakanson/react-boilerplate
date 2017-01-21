@@ -16,10 +16,9 @@ module.exports = {
     root: __dirname,
     alias: {
       App: 'src/components/App.js',
-      configureStore: 'src/redux/store/configureStore.js',
-      reducers: 'src/redux/reducers/index.js',
-      actions: 'src/redux/actions/index.js',
-      LocalStore: 'src/api/index.js',
+      store: 'src/redux/store',
+      reducers: 'src/redux/reducers',
+      actions: 'src/redux/actions',
       routes: 'src/routes.js',
       stylesheet: 'src/styles/stylesheet.scss'
     },

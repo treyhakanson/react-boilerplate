@@ -4,7 +4,7 @@ const express = require('express');
 
 const app = express();
 app.set('view engine', 'pug');
-app.use('/assets', express.static(path.join(__dirname, '../public')));
+app.use('/assets', express.static(path.join(__dirname, './public')));
 
 app.get('*', function(_, res) {
 	res.render('index');

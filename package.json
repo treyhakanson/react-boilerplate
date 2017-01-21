@@ -12,6 +12,10 @@
   },
   "author": "Trey Hakanson",
   "license": "MIT",
+  "repository": { 
+    "type" : "git",
+    "url" : "https://github.com/treyhakanson/react-boilerplate.git"
+  },
   "engines": {
     "node": "4.5.0",
     "npm": "3.10.9"
